@@ -15,7 +15,6 @@ global.$ = {
   rimraf: require( 'rimraf' ),
   spritesmith: require( 'gulp.spritesmith' ),
   streamqueue: require( 'streamqueue' ),
-  mainBowerFiles: require( 'main-bower-files' ),
   updateBowerPlugin: (bowerPath, vendorPath) => {
     return $.gulp.src( bowerPath )
         .pipe( $.gulp.dest( vendorPath ) )
