@@ -2,7 +2,7 @@ doctype
 html(lang="ru").no-js
   head
     block title
-      title Разводящая страница | Gulp + Jade + Stylus Scaffold
+      title Start Page | Gulp + Jade + Stylus Scaffold
     meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
@@ -15,12 +15,13 @@ html(lang="ru").no-js
     | <!--[if lt IE 9]>script(src="./scripts/html5shiv.min.js")<![endif]-->
   body
     .container
-      h2.text-center Разводящая страница для сборки Gulp + Jade + SSC + Bourbon Stack
+      h2.text-center Start page for Shanti Markup Scaffolder
+      h3.text-center Gulp + Pug + SCSS + Bourbon Stack
 
       table.table.table-bordered
         tr
-          th(width="30%") Ссылка
-          th Название страницы
+          th(width="30%") Links
+          th Page name
         if locals.pages
           each page in locals.pages
             tr
