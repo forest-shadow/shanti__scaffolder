@@ -14,11 +14,7 @@ global.$ = {
   gulp: require( 'gulp' ),
   rimraf: require( 'rimraf' ),
   spritesmith: require( 'gulp.spritesmith' ),
-  streamqueue: require( 'streamqueue' ),
-  updateBowerPlugin: (bowerPath, vendorPath) => {
-    return $.gulp.src( bowerPath )
-        .pipe( $.gulp.dest( vendorPath ) )
-  }
+  streamqueue: require( 'streamqueue' )
 };
 
 
@@ -37,9 +33,10 @@ $.gulp.task('watch', function() {
 
 $.gulp.task( 'default', $.gulp.series(
   'clean',
+  'pug:pages',
   $.gulp.parallel(
     'sass',
-    'pug',
+    'pug:index',
     'js',
     'fonts',
     'images',

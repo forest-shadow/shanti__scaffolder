@@ -8,7 +8,9 @@ module.exports = [
   './gulp/tasks/images/images.mockups.js',
   './gulp/tasks/images/images.vendor.js',
   './gulp/tasks/images/images.spritesmith.js',
-  './gulp/tasks/pug.js',
+  './gulp/tasks/pug/pug.js',
+  './gulp/tasks/pug/pug.index.js',
+  './gulp/tasks/pug/pug.pages.js',
   './gulp/tasks/sass.js',
   './gulp/tasks/server.js',
   './gulp/tasks/svg.js'
